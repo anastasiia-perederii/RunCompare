@@ -1,13 +1,41 @@
-# React + Vite
+# 📊 MLOps Experiment Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Інтерактивний React-додаток для перегляду метрик з експериментів машинного навчання на основі CSV-файлів. Підтримує
+завантаження файлу, вибір експериментів і побудову графіків для кожної метрики.
 
-Currently, two official plugins are available:
+## 📌 Функціональність
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Завантаження CSV-файлу з експериментальними даними
+* Вибір одного або кількох експериментів для перегляду
+* Побудова графіків по кожній метриці для вибраних експериментів
+* Використано PrimeReact для UI та Chart.js для візуалізації
 
-## Expanding the ESLint configuration
+## 📌 Демо
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Відкрити додаток онлайн](https://run-compare.vercel.app/)
 
+## 📌 Інтерфейс
+
+<img src="screenshot.png" alt="Інтерфейс додатку" width="800" />
+
+## 📌 Тестовий CSV-файл
+
+🔗 [Завантажити CSV-файл](https://drive.google.com/file/d/155280Pg2DxRGhhKpHpnenAEovlTbGYUu/view?usp=sharing)
+
+## 📌 Технології
+
+- React + Vite
+- PrimeReact (UI-компоненти)
+- chart.js через `primereact/chart`
+- `papaparse` для CSV
+
+## 📌️ Як запустити локально
+
+```bash
+git clone https://github.com/anastasiia-perederii/RunCompare.git
+cd RunCompare
+npm install
+npm run dev
+```
+
+🔗 Потім відкрий http://localhost:5173
