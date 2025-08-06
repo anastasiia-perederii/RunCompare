@@ -38,4 +38,4 @@ npm install
 npm run dev
 ```
 
-🔗 Потім відкрий http://localhost:5173
+🔗 Потім відкрити http://localhost:5173
